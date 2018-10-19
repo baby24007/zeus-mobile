@@ -1,40 +1,27 @@
 <template>
-    <div class="gridview">
-        <mt-header fixed title="Zeus-moible">
-            <router-link to="/" slot="right">
-                <mt-button>分享</mt-button>
-            </router-link>
-        </mt-header>
-        <div class="main">
-            <div class="box">
+        <div class="mui-content">
+            <ul class="mui-table-view mui-grid-view mui-grid-9">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                    <a href="/release">
+                        <span class="mui-icon mui-icon-spinner mui-spin"></span>
+                        <div class="mui-media-body">代码发布</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                    <a href="/changeenv">
+                        <span class="mui-icon mui-icon-settings"></span>
+                        <div class="mui-media-body">蓝绿切换</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+                    <a href="/chat">
+                        <span class="mui-icon mui-icon-chatbubble"><span class="mui-badge">5</span></span>
+                        <div class="mui-media-body">通知</div>
+                    </a>
+                </li>
 
-                <div class="content">
-                    <!--<img src="../assets/100x100.png" class="img-responsive">-->
-                    代码发布
-                </div>
-            </div>
-            <div class="box">
-                <div class="content">
-                    蓝绿切换
-                </div>
-            </div>
-            <div class="box">
-                <div class="content">
-                    小工具
-                </div>
-            </div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            </ul>
         </div>
-
-
-
-    </div>
-
 
 </template>
 
@@ -48,40 +35,4 @@
 </script>
 
 <style scoped>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    .main {
-
-        background-color: #fff;
-        width: 100%;
-        padding-bottom: 100%;
-        padding-left: 0.5%;
-        padding-top: 0.5%;
-    }
-
-    .main .box {
-        width: 31%;
-        padding-bottom: 31%;
-        border: 1% solid #fff;
-        background-color: aliceblue;
-        border-radius: 3%;
-        float: left;
-        margin: 1%;
-        position: relative; /*父元素给相对定位*/
-    }
-
-    .main .box .content {
-        　　position: absolute; /*子元素给绝对定位*/
-        　　width: 100%;
-        　　height: 100%;
-    }
-
-    .img-responsive {
-      display: inline-block;
-      height: auto;
-      max-width: 100%;
-    }
 </style>

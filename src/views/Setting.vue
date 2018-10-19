@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>设置页面</h3>
+        <mt-header title="设置"></mt-header>
         <Tabbar :selected="selected"></Tabbar>
     </div>
     
