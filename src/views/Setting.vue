@@ -1,6 +1,12 @@
 <template>
     <div>
-        <mt-header title="设置"></mt-header>
+        <!--顶部导航栏-->
+        <mt-header title="设置">
+            <router-link to="/" slot="left">
+                <mt-button icon="back">返回</mt-button>
+            </router-link>
+            <mt-button icon="more" slot="right"></mt-button>
+        </mt-header>
         <Tabbar :selected="selected"></Tabbar>
     </div>
     

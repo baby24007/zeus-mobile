@@ -29,7 +29,6 @@
     export default {
         name: "Gridview",
         props: {
-            msg2: String,
         },
     };
 </script>
